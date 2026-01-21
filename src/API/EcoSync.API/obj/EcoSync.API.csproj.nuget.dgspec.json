@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/API/EcoSync.API/EcoSync.API.csproj",
         "projectName": "EcoSync.API",
         "projectPath": "/home/runner/work/eco-sync/eco-sync/src/API/EcoSync.API/EcoSync.API.csproj",
-        "packagesPath": "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/eco-sync/eco-sync/src/API/EcoSync.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -72,20 +72,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -104,7 +90,7 @@
         "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj",
         "projectName": "EcoSync.BuildingBlocks",
         "projectPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj",
-        "packagesPath": "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -154,16 +140,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -179,7 +155,7 @@
         "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/API/EcoSync.Modules.Catalog.API/EcoSync.Modules.Catalog.API.csproj",
         "projectName": "EcoSync.Modules.Catalog.API",
         "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/API/EcoSync.Modules.Catalog.API/EcoSync.Modules.Catalog.API.csproj",
-        "packagesPath": "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/API/EcoSync.Modules.Catalog.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -240,16 +216,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -268,7 +234,7 @@
         "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj",
         "projectName": "EcoSync.Modules.Catalog.Application",
         "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj",
-        "packagesPath": "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -333,16 +299,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -358,7 +314,7 @@
         "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj",
         "projectName": "EcoSync.Modules.Catalog.Domain",
         "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj",
-        "packagesPath": "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -406,16 +362,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -431,7 +377,7 @@
         "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
         "projectName": "EcoSync.Modules.Catalog.Infrastructure",
         "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
-        "packagesPath": "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -501,16 +447,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
