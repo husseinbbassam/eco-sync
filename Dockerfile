@@ -5,6 +5,7 @@ WORKDIR /src
 # Copy solution and project files
 COPY EcoSync.sln ./
 COPY src/BuildingBlocks/EcoSync.BuildingBlocks/*.csproj ./src/BuildingBlocks/EcoSync.BuildingBlocks/
+COPY src/SharedKernel/EcoSync.SharedKernel/*.csproj ./src/SharedKernel/EcoSync.SharedKernel/
 COPY src/EcoSync.IntegrationEvents/*.csproj ./src/EcoSync.IntegrationEvents/
 
 # Catalog module
