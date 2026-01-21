@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "EcoSync.Modules.Catalog.Domain/1.0.0": {
+        "runtime": {
+          "EcoSync.Modules.Catalog.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EcoSync.Modules.Catalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

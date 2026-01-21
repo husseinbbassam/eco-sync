@@ -1,0 +1,12 @@
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/bin/Release/net9.0/EcoSync.Modules.Identity.Application.deps.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/bin/Release/net9.0/EcoSync.Modules.Identity.Application.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/bin/Release/net9.0/EcoSync.Modules.Identity.Application.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.AssemblyInfoInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.AssemblyInfo.cs
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.csproj.CoreCompileInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.sourcelink.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/refint/EcoSync.Modules.Identity.Application.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/EcoSync.Modules.Identity.Application.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Application/EcoSync.Modules.Identity.Application/obj/Release/net9.0/ref/EcoSync.Modules.Identity.Application.dll

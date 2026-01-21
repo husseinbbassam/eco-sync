@@ -1,0 +1,12 @@
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/bin/Release/net9.0/EcoSync.Modules.Identity.Domain.deps.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/bin/Release/net9.0/EcoSync.Modules.Identity.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/bin/Release/net9.0/EcoSync.Modules.Identity.Domain.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.AssemblyInfoInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.AssemblyInfo.cs
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.csproj.CoreCompileInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.sourcelink.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/refint/EcoSync.Modules.Identity.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/EcoSync.Modules.Identity.Domain.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Identity/Domain/EcoSync.Modules.Identity.Domain/obj/Release/net9.0/ref/EcoSync.Modules.Identity.Domain.dll
