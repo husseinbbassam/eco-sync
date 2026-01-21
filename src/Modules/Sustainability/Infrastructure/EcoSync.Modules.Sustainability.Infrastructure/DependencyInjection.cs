@@ -1,4 +1,3 @@
-using EcoSync.Modules.Sustainability.Application.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
@@ -23,7 +22,6 @@ public static class DependencyInjection
         var kernel = builder.Build();
         
         services.AddSingleton(kernel);
-        services.AddScoped<ICarbonFootprintService, CarbonFootprintService>();
 
         return services;
     }

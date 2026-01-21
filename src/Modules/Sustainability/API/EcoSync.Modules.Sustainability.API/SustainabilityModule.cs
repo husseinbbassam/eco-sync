@@ -1,4 +1,5 @@
 using EcoSync.Modules.Sustainability.API.Endpoints;
+using EcoSync.Modules.Sustainability.Application.Services;
 using EcoSync.Modules.Sustainability.Infrastructure;
 using FluentValidation;
 using Microsoft.AspNetCore.Builder;
@@ -14,8 +15,11 @@ public static class SustainabilityModule
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        // Add Infrastructure
+        // Add Infrastructure (Kernel configuration)
         services.AddSustainabilityInfrastructure(configuration);
+
+        // Add Application services
+        services.AddScoped<ICarbonFootprintService, CarbonFootprintService>();
 
         // Add MediatR handlers from Application layer
         services.AddMediatR(cfg =>
@@ -29,7 +33,7 @@ public static class SustainabilityModule
         return services;
     }
 
-    public static IEndpointRouteBuilder MapSustainabilityEndpoints(this IEndpointRouteBuilder app)
+    public static IEndpointRouteBuilder MapSustainabilityModuleEndpoints(this IEndpointRouteBuilder app)
     {
         app.MapSustainabilityEndpoints();
         return app;

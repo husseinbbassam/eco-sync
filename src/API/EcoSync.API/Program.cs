@@ -42,7 +42,7 @@ app.UseSerilogRequestLogging();
 
 // Map module endpoints
 app.MapCatalogEndpoints();
-app.MapSustainabilityEndpoints();
+app.MapSustainabilityModuleEndpoints();
 
 app.MapGet("/", () => "EcoSync API is running!")
     .WithName("Health")
