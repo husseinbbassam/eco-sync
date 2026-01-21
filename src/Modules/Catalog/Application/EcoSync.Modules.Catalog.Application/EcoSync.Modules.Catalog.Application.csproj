@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../../../../BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj" />
+    <ProjectReference Include="../../../../EcoSync.IntegrationEvents/EcoSync.IntegrationEvents.csproj" />
     <ProjectReference Include="../../Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj" />
   </ItemGroup>
 

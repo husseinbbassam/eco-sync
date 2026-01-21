@@ -990,11 +990,25 @@
           "bin/placeholder/EcoSync.BuildingBlocks.dll": {}
         }
       },
+      "EcoSync.IntegrationEvents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MediatR": "12.4.1"
+        },
+        "compile": {
+          "bin/placeholder/EcoSync.IntegrationEvents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoSync.IntegrationEvents.dll": {}
+        }
+      },
       "EcoSync.Modules.Catalog.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "EcoSync.BuildingBlocks": "1.0.0",
+          "EcoSync.IntegrationEvents": "1.0.0",
           "EcoSync.Modules.Catalog.Domain": "1.0.0",
           "FluentValidation": "11.11.0",
           "Mapster": "7.4.0",
@@ -2983,6 +2997,11 @@
       "type": "project",
       "path": "../../../../BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj",
       "msbuildProject": "../../../../BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj"
+    },
+    "EcoSync.IntegrationEvents/1.0.0": {
+      "type": "project",
+      "path": "../../../../EcoSync.IntegrationEvents/EcoSync.IntegrationEvents.csproj",
+      "msbuildProject": "../../../../EcoSync.IntegrationEvents/EcoSync.IntegrationEvents.csproj"
     },
     "EcoSync.Modules.Catalog.Application/1.0.0": {
       "type": "project",

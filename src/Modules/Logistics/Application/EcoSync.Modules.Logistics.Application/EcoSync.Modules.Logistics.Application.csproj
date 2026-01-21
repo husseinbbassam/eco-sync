@@ -4,6 +4,17 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../../BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj" />
+    <ProjectReference Include="../../../../EcoSync.IntegrationEvents/EcoSync.IntegrationEvents.csproj" />
+    <ProjectReference Include="../../Domain/EcoSync.Modules.Logistics.Domain/EcoSync.Modules.Logistics.Domain.csproj" />
+  </ItemGroup>
 
 </Project>

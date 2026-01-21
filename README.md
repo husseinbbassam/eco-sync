@@ -110,11 +110,11 @@ dotnet run
 - Price management
 - Product activation/deactivation
 
-### Logistics Module (Planned)
+### Logistics Module
 - Shipment creation and tracking
-- Route optimization
-- Delivery status updates
-- Integration events for sustainability calculations
+- Pending shipment creation via integration events
+- Integration with Catalog module via ProductCreatedIntegrationEvent
+- Shipment status management (Pending, InTransit, Delivered, Cancelled)
 
 ### Sustainability Module (Planned)
 - Carbon footprint calculation

@@ -1,5 +1,7 @@
 using EcoSync.BuildingBlocks.Application;
+using EcoSync.IntegrationEvents.Catalog;
 using EcoSync.Modules.Catalog.Domain.Products;
+using MediatR;
 
 namespace EcoSync.Modules.Catalog.Application.Products.Commands.CreateProduct;
 
@@ -7,13 +9,16 @@ public sealed class CreateProductCommandHandler : ICommandHandler<CreateProductC
 {
     private readonly IProductRepository _productRepository;
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IPublisher _publisher;
 
     public CreateProductCommandHandler(
         IProductRepository productRepository,
-        IUnitOfWork unitOfWork)
+        IUnitOfWork unitOfWork,
+        IPublisher publisher)
     {
         _productRepository = productRepository;
         _unitOfWork = unitOfWork;
+        _publisher = publisher;
     }
 
     public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
@@ -30,6 +35,14 @@ public sealed class CreateProductCommandHandler : ICommandHandler<CreateProductC
 
         await _productRepository.AddAsync(product, cancellationToken);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+        var integrationEvent = new ProductCreatedIntegrationEvent
+        {
+            ProductId = product.Id,
+            ProductName = product.Name
+        };
+
+        await _publisher.Publish(integrationEvent, cancellationToken);
 
         return product.Id;
     }
