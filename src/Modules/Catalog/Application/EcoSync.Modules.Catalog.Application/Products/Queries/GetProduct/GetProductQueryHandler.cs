@@ -24,6 +24,7 @@ public sealed class GetProductQueryHandler : IQueryHandler<GetProductQuery, Prod
             product.Id,
             product.Name,
             product.Description,
+            product.Material,
             product.Price.Amount,
             product.Price.Currency,
             product.Category.ToString(),

@@ -29,6 +29,7 @@ public sealed class CreateProductCommandHandler : ICommandHandler<CreateProductC
         var product = Product.Create(
             request.Name,
             request.Description,
+            request.Material,
             money,
             category,
             request.StockQuantity);

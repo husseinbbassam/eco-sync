@@ -4,6 +4,7 @@ public sealed record ProductDto(
     Guid Id,
     string Name,
     string Description,
+    string Material,
     decimal Price,
     string Currency,
     string Category,
