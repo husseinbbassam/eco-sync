@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../../BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj" />
+    <ProjectReference Include="../../Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj" />
+    <ProjectReference Include="../../Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj" />
+  </ItemGroup>
+
+</Project>

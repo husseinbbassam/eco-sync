@@ -1,0 +1,12 @@
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/bin/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.deps.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/bin/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/bin/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.AssemblyInfoInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.AssemblyInfo.cs
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.csproj.CoreCompileInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.sourcelink.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/refint/EcoSync.Modules.Logistics.Infrastructure.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/EcoSync.Modules.Logistics.Infrastructure.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Infrastructure/EcoSync.Modules.Logistics.Infrastructure/obj/Release/net9.0/ref/EcoSync.Modules.Logistics.Infrastructure.dll

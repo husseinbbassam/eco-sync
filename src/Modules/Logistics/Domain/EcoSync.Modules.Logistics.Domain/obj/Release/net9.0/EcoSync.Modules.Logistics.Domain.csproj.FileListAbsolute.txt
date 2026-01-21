@@ -1,0 +1,12 @@
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/bin/Release/net9.0/EcoSync.Modules.Logistics.Domain.deps.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/bin/Release/net9.0/EcoSync.Modules.Logistics.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/bin/Release/net9.0/EcoSync.Modules.Logistics.Domain.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.AssemblyInfoInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.AssemblyInfo.cs
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.csproj.CoreCompileInputs.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.sourcelink.json
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/refint/EcoSync.Modules.Logistics.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/EcoSync.Modules.Logistics.Domain.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Domain/EcoSync.Modules.Logistics.Domain/obj/Release/net9.0/ref/EcoSync.Modules.Logistics.Domain.dll
