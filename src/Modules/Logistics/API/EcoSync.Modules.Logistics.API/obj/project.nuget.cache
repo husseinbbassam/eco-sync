@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kU4enS7SYW4=",
+  "dgSpecHash": "ib0p7dwnbgo=",
   "success": true,
   "projectFilePath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/API/EcoSync.Modules.Logistics.API/EcoSync.Modules.Logistics.API.csproj",
-  "expectedPackageFiles": [
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
