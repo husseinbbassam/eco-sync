@@ -20,6 +20,7 @@ builder.Services.AddCatalogModule(builder.Configuration);
 builder.Services.AddSustainabilityModule(builder.Configuration);
 
 // Add Health Checks
+// Note: Add health checks for other module DbContexts as they are registered in the application
 builder.Services.AddHealthChecks()
     .AddNpgSql(
         builder.Configuration.GetConnectionString("Database")!,
@@ -49,6 +50,9 @@ var app = builder.Build();
 try
 {
     using var scope = app.Services.CreateScope();
+    
+    // Migrate Catalog database
+    // Note: Add other module DbContexts here as they are registered in the application
     var catalogDbContext = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
     
     Log.Information("Running database migrations...");
