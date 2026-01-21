@@ -1,5 +1,8 @@
 using EcoSync.Modules.Catalog.API;
 using EcoSync.Modules.Sustainability.API;
+using EcoSync.Modules.Catalog.Infrastructure.Database;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +11,6 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
-    .WriteTo.Console()
     .CreateLogger();
 
 builder.Host.UseSerilog();
@@ -16,6 +18,18 @@ builder.Host.UseSerilog();
 // Add modules
 builder.Services.AddCatalogModule(builder.Configuration);
 builder.Services.AddSustainabilityModule(builder.Configuration);
+
+// Add Health Checks
+builder.Services.AddHealthChecks()
+    .AddNpgSql(
+        builder.Configuration.GetConnectionString("Database")!,
+        name: "database",
+        failureStatus: HealthStatus.Unhealthy,
+        tags: new[] { "db", "sql", "postgres" })
+    .AddDbContextCheck<CatalogDbContext>(
+        name: "catalog-db-context",
+        failureStatus: HealthStatus.Unhealthy,
+        tags: new[] { "db", "catalog" });
 
 // Add OpenAPI/Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -31,6 +45,22 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+// Run database migrations on startup
+try
+{
+    using var scope = app.Services.CreateScope();
+    var catalogDbContext = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
+    
+    Log.Information("Running database migrations...");
+    await catalogDbContext.Database.MigrateAsync();
+    Log.Information("Database migrations completed successfully");
+}
+catch (Exception ex)
+{
+    Log.Error(ex, "An error occurred while migrating the database");
+    throw;
+}
+
 // Configure middleware
 if (app.Environment.IsDevelopment())
 {
@@ -39,6 +69,38 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseSerilogRequestLogging();
+
+// Map health check endpoints
+app.MapHealthChecks("/health", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+{
+    ResponseWriter = async (context, report) =>
+    {
+        context.Response.ContentType = "application/json";
+        var result = System.Text.Json.JsonSerializer.Serialize(new
+        {
+            status = report.Status.ToString(),
+            checks = report.Entries.Select(e => new
+            {
+                name = e.Key,
+                status = e.Value.Status.ToString(),
+                description = e.Value.Description,
+                duration = e.Value.Duration.TotalMilliseconds
+            }),
+            totalDuration = report.TotalDuration.TotalMilliseconds
+        });
+        await context.Response.WriteAsync(result);
+    }
+});
+
+app.MapHealthChecks("/health/ready", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+{
+    Predicate = check => check.Tags.Contains("db")
+});
+
+app.MapHealthChecks("/health/live", new Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions
+{
+    Predicate = _ => false // No checks, just returns if the app is running
+});
 
 // Map module endpoints
 app.MapCatalogEndpoints();
