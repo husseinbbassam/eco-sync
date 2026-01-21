@@ -712,6 +712,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "EcoSync.SharedKernel": "1.0.0",
           "MediatR": "12.4.1"
         },
         "compile": {
@@ -785,6 +786,19 @@
         },
         "runtime": {
           "bin/placeholder/EcoSync.Modules.Catalog.Infrastructure.dll": {}
+        }
+      },
+      "EcoSync.SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MediatR": "12.4.1"
+        },
+        "compile": {
+          "bin/placeholder/EcoSync.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoSync.SharedKernel.dll": {}
         }
       }
     }
@@ -2060,6 +2074,11 @@
       "type": "project",
       "path": "../../Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
       "msbuildProject": "../../Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj"
+    },
+    "EcoSync.SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../../SharedKernel/EcoSync.SharedKernel/EcoSync.SharedKernel.csproj",
+      "msbuildProject": "../../SharedKernel/EcoSync.SharedKernel/EcoSync.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {

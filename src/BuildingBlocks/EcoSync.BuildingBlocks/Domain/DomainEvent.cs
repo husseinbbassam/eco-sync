@@ -1,7 +1,6 @@
+// This is a backwards compatibility shim - use EcoSync.SharedKernel.Domain.DomainEventBase directly
 namespace EcoSync.BuildingBlocks.Domain;
 
-public abstract record DomainEvent : IDomainEvent
+public abstract record DomainEvent : EcoSync.SharedKernel.Domain.DomainEventBase
 {
-    public Guid EventId { get; } = Guid.NewGuid();
-    public DateTime OccurredOn { get; } = DateTime.UtcNow;
 }
