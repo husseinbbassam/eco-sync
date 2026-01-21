@@ -1,14 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sWp/MQGE8io=",
+  "dgSpecHash": "W4y7/+uPlkA=",
   "success": true,
   "projectFilePath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj",
   "expectedPackageFiles": [
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
-    "/home/runner/work/eco-sync/.codeql-scratch/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
+    "/home/runner/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
