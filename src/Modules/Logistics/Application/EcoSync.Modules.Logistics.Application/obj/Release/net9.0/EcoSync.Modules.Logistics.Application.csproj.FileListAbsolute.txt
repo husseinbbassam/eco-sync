@@ -10,3 +10,13 @@
 /home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/obj/Release/net9.0/refint/EcoSync.Modules.Logistics.Application.dll
 /home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/obj/Release/net9.0/EcoSync.Modules.Logistics.Application.pdb
 /home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/obj/Release/net9.0/ref/EcoSync.Modules.Logistics.Application.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.BuildingBlocks.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.IntegrationEvents.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.Modules.Logistics.Domain.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.SharedKernel.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.BuildingBlocks.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.IntegrationEvents.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.Modules.Logistics.Domain.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/bin/Release/net9.0/EcoSync.SharedKernel.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/obj/Release/net9.0/EcoSync.Modules.Logistics.Application.csproj.AssemblyReference.cache
+/home/runner/work/eco-sync/eco-sync/src/Modules/Logistics/Application/EcoSync.Modules.Logistics.Application/obj/Release/net9.0/EcoSync..FA40027B.Up2Date

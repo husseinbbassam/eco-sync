@@ -11,3 +11,6 @@
 /home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/obj/Release/net9.0/refint/EcoSync.BuildingBlocks.dll
 /home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/obj/Release/net9.0/EcoSync.BuildingBlocks.pdb
 /home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/obj/Release/net9.0/ref/EcoSync.BuildingBlocks.dll
+/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/bin/Release/net9.0/EcoSync.SharedKernel.dll
+/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/bin/Release/net9.0/EcoSync.SharedKernel.pdb
+/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/obj/Release/net9.0/EcoSync..5E3286A1.Up2Date

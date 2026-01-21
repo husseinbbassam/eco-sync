@@ -54,10 +54,14 @@ try
     // Migrate Catalog database
     // Note: Add other module DbContexts here as they are registered in the application
     var catalogDbContext = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
+    var logger = scope.ServiceProvider.GetRequiredService<Microsoft.Extensions.Logging.ILogger<Program>>();
     
     Log.Information("Running database migrations...");
     await catalogDbContext.Database.MigrateAsync();
     Log.Information("Database migrations completed successfully");
+    
+    // Seed database with sample data
+    await EcoSync.Modules.Catalog.Infrastructure.Database.DbInitializer.SeedAsync(catalogDbContext, logger);
 }
 catch (Exception ex)
 {

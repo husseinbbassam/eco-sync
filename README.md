@@ -11,6 +11,53 @@ The application is organized into four distinct modules:
 - **Sustainability**: Environmental impact tracking and sustainability scoring
 - **Identity**: User authentication and authorization
 
+### Module Communication via MediatR
+
+The modules communicate with each other through integration events using MediatR. This ensures loose coupling between modules while maintaining consistency.
+
+```mermaid
+graph TB
+    subgraph "Catalog Module"
+        CP[Product Created]
+        CH[Command Handlers]
+        CR[Product Repository]
+    end
+    
+    subgraph "MediatR Event Bus"
+        PCE[ProductCreatedIntegrationEvent]
+        SCE[ShipmentCreatedIntegrationEvent]
+    end
+    
+    subgraph "Logistics Module"
+        LH[Event Handlers]
+        SR[Shipment Repository]
+        SC[Create Shipment]
+    end
+    
+    subgraph "Sustainability Module"
+        SH[Event Handlers]
+        SA[Sustainability Analysis]
+        SS[Sustainability Score]
+    end
+    
+    CP -->|Raises| PCE
+    PCE -->|Handled by| LH
+    LH -->|Creates| SC
+    SC -->|Stores| SR
+    
+    PCE -.->|Future: Handled by| SH
+    SH -.->|Calculates| SA
+    SA -.->|Stores| SS
+    
+    SC -->|Raises| SCE
+    
+    style PCE fill:#e1f5ff,stroke:#01579b
+    style SCE fill:#e1f5ff,stroke:#01579b
+    style CP fill:#c8e6c9,stroke:#2e7d32
+    style SC fill:#fff9c4,stroke:#f57f17
+    style SA fill:#f3e5f5,stroke:#4a148c
+```
+
 ### Clean Architecture
 Each module follows Clean Architecture with four layers:
 - **Domain**: Core business logic, aggregates, value objects, and domain events
@@ -63,34 +110,76 @@ src/
 - [Docker](https://www.docker.com/get-started) and Docker Compose
 - PostgreSQL (if running without Docker)
 
-### Running with Docker Compose
+### How to Run with Docker
 
-1. Clone the repository
+The easiest way to run EcoSync is using Docker Compose, which will start all required services (API, PostgreSQL, Redis):
+
+1. **Clone the repository**
 ```bash
 git clone https://github.com/husseinbbassam/eco-sync.git
 cd eco-sync
 ```
 
-2. Start all services
+2. **Start all services with Docker Compose**
 ```bash
 docker-compose up -d
 ```
 
-3. Access the API
+This command will:
+- Build the EcoSync API Docker image
+- Start PostgreSQL database on port 5432
+- Start Redis cache on port 6379
+- Start the API on port 5000
+- Automatically run database migrations
+- Seed the database with 10 sample products
+
+3. **Access the application**
 - API: http://localhost:5000
 - Swagger UI: http://localhost:5000/swagger
+- Health Check: http://localhost:5000/health
 
-### Running Locally
+4. **View logs**
+```bash
+# View all logs
+docker-compose logs -f
 
-1. Ensure PostgreSQL is running
+# View API logs only
+docker-compose logs -f api
+```
 
-2. Update connection string in `src/API/EcoSync.API/appsettings.json`
+5. **Stop all services**
+```bash
+docker-compose down
+```
 
-3. Run the API
+6. **Stop and remove all data (including database volumes)**
+```bash
+docker-compose down -v
+```
+
+### Running Locally (Without Docker)
+
+1. **Ensure PostgreSQL is running**
+
+2. **Update connection string in `src/API/EcoSync.API/appsettings.json`**
+```json
+{
+  "ConnectionStrings": {
+    "Database": "Host=localhost;Port=5432;Database=ecosync;Username=postgres;Password=your_password"
+  }
+}
+```
+
+3. **Run the API**
 ```bash
 cd src/API/EcoSync.API
 dotnet run
 ```
+
+The application will automatically:
+- Run database migrations
+- Seed the database with sample products (if not already present)
+- Start the API on http://localhost:5000
 
 ## API Endpoints
 
@@ -146,13 +235,87 @@ dotnet ef migrations add InitialCreate --context CatalogDbContext
 dotnet ef database update --context CatalogDbContext
 ```
 
-## Architecture Principles
+## Architecture Decisions
 
-1. **Module Independence**: Each module can evolve independently
-2. **Encapsulation**: Domain logic is protected within aggregates
-3. **Event-Driven**: Modules communicate via integration events
-4. **CQRS**: Separate read and write operations
-5. **Clean Dependencies**: Dependencies point inward toward the domain
+### Why Modular Monolith?
+
+We chose a modular monolith architecture over microservices for several strategic reasons:
+
+1. **Simplicity**: Single deployment unit reduces operational complexity
+2. **Development Speed**: Easier to refactor and evolve the codebase
+3. **Performance**: In-process communication is faster than network calls
+4. **Consistency**: ACID transactions across modules when needed
+5. **Future Flexibility**: Can be split into microservices later if needed
+
+### Key Design Decisions
+
+#### 1. Clean Architecture with DDD
+- **Decision**: Organize each module using Clean Architecture layers with DDD tactical patterns
+- **Rationale**: Separates business logic from infrastructure concerns, making the code more maintainable and testable
+- **Trade-off**: More initial setup complexity, but long-term maintainability gains
+
+#### 2. MediatR for Inter-Module Communication
+- **Decision**: Use MediatR for both in-module (commands/queries) and inter-module (integration events) communication
+- **Rationale**: 
+  - Decouples modules from each other
+  - Provides a consistent messaging pattern
+  - Enables the Outbox pattern for reliable event delivery
+- **Trade-off**: Additional abstraction layer, but significantly improves module independence
+
+#### 3. Integration Events vs Direct References
+- **Decision**: Modules communicate via integration events, not direct domain references
+- **Rationale**: 
+  - Maintains bounded context boundaries
+  - Prevents tight coupling between modules
+  - Allows modules to evolve independently
+- **Implementation**: Shared integration event contracts in a separate project
+
+#### 4. Outbox Pattern for Event Publishing
+- **Decision**: Store events in an outbox table and publish them asynchronously
+- **Rationale**: 
+  - Guarantees at-least-once delivery
+  - Maintains consistency between database changes and event publishing
+  - Prevents lost events due to failures
+- **Trade-off**: Eventual consistency instead of immediate consistency
+
+#### 5. One Database, Multiple Schemas
+- **Decision**: Use PostgreSQL with separate schemas per module (e.g., `catalog`, `logistics`)
+- **Rationale**: 
+  - Logical separation while maintaining ACID guarantees
+  - Easier to manage than multiple databases
+  - Can be split into separate databases later if needed
+- **Trade-off**: Not as isolated as separate databases, but simpler to operate
+
+#### 6. CQRS Pattern
+- **Decision**: Separate command (write) and query (read) operations
+- **Rationale**: 
+  - Optimizes reads and writes independently
+  - Allows different models for reading and writing
+  - Scales read and write concerns separately
+- **Implementation**: Commands for writes, Queries for reads, both via MediatR
+
+#### 7. Value Objects and Aggregates
+- **Decision**: Use DDD tactical patterns extensively
+- **Rationale**: 
+  - Value Objects ensure invariants (e.g., Money can't be negative)
+  - Aggregates maintain consistency boundaries
+  - Domain events capture business-relevant occurrences
+- **Example**: `Money` as a value object, `Product` as an aggregate root
+
+#### 8. Database-per-Module Migrations
+- **Decision**: Each module manages its own migrations
+- **Rationale**: 
+  - Modules own their data schema
+  - Independent evolution of database schemas
+  - Clear ownership boundaries
+- **Implementation**: Separate DbContext per module with individual migration histories
+
+### Future Considerations
+
+- **API Gateway**: If we split into microservices, add an API gateway for routing
+- **Event Bus**: Replace in-process MediatR with RabbitMQ or Kafka for distributed events
+- **CQRS Reads**: Consider read-specific databases (e.g., Elasticsearch) for complex queries
+- **Service Mesh**: Add Istio or Linkerd if moving to Kubernetes-based microservices
 
 ## Contributing
 

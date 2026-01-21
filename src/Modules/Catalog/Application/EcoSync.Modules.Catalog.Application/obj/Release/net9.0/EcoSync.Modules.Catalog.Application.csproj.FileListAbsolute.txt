@@ -16,3 +16,7 @@
 /home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/bin/Release/net9.0/EcoSync.Modules.Catalog.Domain.pdb
 /home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/obj/Release/net9.0/EcoSync.Modules.Catalog.Application.csproj.AssemblyReference.cache
 /home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/obj/Release/net9.0/EcoSync..C9ABFD69.Up2Date
+/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/bin/Release/net9.0/EcoSync.IntegrationEvents.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/bin/Release/net9.0/EcoSync.SharedKernel.dll
+/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/bin/Release/net9.0/EcoSync.IntegrationEvents.pdb
+/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/bin/Release/net9.0/EcoSync.SharedKernel.pdb
