@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoSync.Modules.Identity.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5430850a692296c3cac3b31022b5d3b60c24ce35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+869164898cf3c3739928661f3413c416ea9723b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoSync.Modules.Identity.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoSync.Modules.Identity.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
