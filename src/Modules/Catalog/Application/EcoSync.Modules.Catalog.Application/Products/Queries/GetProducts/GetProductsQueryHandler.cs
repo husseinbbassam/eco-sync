@@ -35,6 +35,7 @@ public sealed class GetProductsQueryHandler : IQueryHandler<GetProductsQuery, IE
             p.Id,
             p.Name,
             p.Description,
+            p.Material,
             p.Price.Amount,
             p.Price.Currency,
             p.Category.ToString(),

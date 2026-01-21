@@ -6,6 +6,7 @@ public sealed class Product : AggregateRoot
 {
     public string Name { get; private set; }
     public string Description { get; private set; }
+    public string Material { get; private set; }
     public Money Price { get; private set; }
     public ProductCategory Category { get; private set; }
     public int StockQuantity { get; private set; }
@@ -17,12 +18,14 @@ public sealed class Product : AggregateRoot
         Guid id,
         string name,
         string description,
+        string material,
         Money price,
         ProductCategory category,
         int stockQuantity) : base(id)
     {
         Name = name;
         Description = description;
+        Material = material;
         Price = price;
         Category = category;
         StockQuantity = stockQuantity;
@@ -34,6 +37,7 @@ public sealed class Product : AggregateRoot
     {
         Name = string.Empty;
         Description = string.Empty;
+        Material = string.Empty;
         Price = Money.Zero();
         Category = ProductCategory.General;
     }
@@ -41,6 +45,7 @@ public sealed class Product : AggregateRoot
     public static Product Create(
         string name,
         string description,
+        string material,
         Money price,
         ProductCategory category,
         int stockQuantity)
@@ -49,6 +54,7 @@ public sealed class Product : AggregateRoot
             Guid.NewGuid(),
             name,
             description,
+            material,
             price,
             category,
             stockQuantity);

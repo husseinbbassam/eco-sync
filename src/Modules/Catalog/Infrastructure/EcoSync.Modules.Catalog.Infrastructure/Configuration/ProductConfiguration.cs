@@ -20,6 +20,10 @@ internal sealed class ProductConfiguration : IEntityTypeConfiguration<Product>
             .HasMaxLength(1000)
             .IsRequired();
 
+        builder.Property(p => p.Material)
+            .HasMaxLength(500)
+            .IsRequired();
+
         builder.OwnsOne(p => p.Price, money =>
         {
             money.Property(m => m.Amount)

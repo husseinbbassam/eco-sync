@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../../Modules/Catalog/API/EcoSync.Modules.Catalog.API/EcoSync.Modules.Catalog.API.csproj" />
+    <ProjectReference Include="../../Modules/Sustainability/API/EcoSync.Modules.Sustainability.API/EcoSync.Modules.Sustainability.API.csproj" />
   </ItemGroup>
 
 </Project>
