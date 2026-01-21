@@ -9,10 +9,10 @@ public class Result<T>
 
     private Result(bool isSuccess, T? value, string error)
     {
-        if (isSuccess && error != string.Empty)
+        if (isSuccess && !string.IsNullOrEmpty(error))
             throw new InvalidOperationException("A successful result cannot have an error.");
 
-        if (!isSuccess && error == string.Empty)
+        if (!isSuccess && string.IsNullOrEmpty(error))
             throw new InvalidOperationException("A failed result must have an error.");
 
         IsSuccess = isSuccess;

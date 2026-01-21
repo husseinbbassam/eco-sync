@@ -15,9 +15,17 @@ public abstract class ValueObject
 
     public override int GetHashCode()
     {
-        return GetAtomicValues()
-            .Select(x => x?.GetHashCode() ?? 0)
-            .Aggregate((x, y) => x ^ y);
+        var values = GetAtomicValues().ToList();
+        
+        if (values.Count == 0)
+            return 0;
+            
+        var hash = new HashCode();
+        foreach (var value in values)
+        {
+            hash.Add(value);
+        }
+        return hash.ToHashCode();
     }
 
     public static bool operator ==(ValueObject? left, ValueObject? right)
