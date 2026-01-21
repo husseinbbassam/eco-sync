@@ -1,4 +1,5 @@
 using EcoSync.Modules.Catalog.API;
+using EcoSync.Modules.Sustainability.API;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Host.UseSerilog();
 
 // Add modules
 builder.Services.AddCatalogModule(builder.Configuration);
+builder.Services.AddSustainabilityModule(builder.Configuration);
 
 // Add OpenAPI/Swagger
 builder.Services.AddEndpointsApiExplorer();
@@ -40,6 +42,7 @@ app.UseSerilogRequestLogging();
 
 // Map module endpoints
 app.MapCatalogEndpoints();
+app.MapSustainabilityEndpoints();
 
 app.MapGet("/", () => "EcoSync API is running!")
     .WithName("Health")

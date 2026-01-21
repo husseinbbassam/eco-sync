@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "G8Wzf11r82M=",
+  "dgSpecHash": "epY/fe+/PuE=",
   "success": true,
   "projectFilePath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Sustainability/Domain/EcoSync.Modules.Sustainability.Domain/EcoSync.Modules.Sustainability.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
