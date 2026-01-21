@@ -4,6 +4,18 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../../BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj" />
+    <ProjectReference Include="../../Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj" />
+  </ItemGroup>
 
 </Project>

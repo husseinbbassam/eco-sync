@@ -4,14 +4,14 @@
     "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj": {
+    "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
-        "projectName": "EcoSync.Modules.Catalog.Infrastructure",
-        "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
+        "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj",
+        "projectName": "EcoSync.BuildingBlocks",
+        "projectPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj",
         "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/obj/",
+        "outputPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/runner/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,240 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj",
+        "projectName": "EcoSync.Modules.Catalog.Application",
+        "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj": {
+                "projectPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj"
+              },
+              "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj": {
+                "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj",
+        "projectName": "EcoSync.Modules.Catalog.Domain",
+        "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj": {
+                "projectPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
+        "projectName": "EcoSync.Modules.Catalog.Infrastructure",
+        "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/EcoSync.Modules.Catalog.Infrastructure.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Infrastructure/EcoSync.Modules.Catalog.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj": {
+                "projectPath": "/home/runner/work/eco-sync/eco-sync/src/BuildingBlocks/EcoSync.BuildingBlocks/EcoSync.BuildingBlocks.csproj"
+              },
+              "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj": {
+                "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj"
+              },
+              "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj": {
+                "projectPath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Domain/EcoSync.Modules.Catalog.Domain/EcoSync.Modules.Catalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

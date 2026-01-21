@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "R7zm/KeDsOo=",
+  "dgSpecHash": "PswONkjJem8=",
   "success": true,
   "projectFilePath": "/home/runner/work/eco-sync/eco-sync/src/Modules/Catalog/Application/EcoSync.Modules.Catalog.Application/EcoSync.Modules.Catalog.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/runner/.nuget/packages/fluentvalidation/11.11.0/fluentvalidation.11.11.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
